@@ -1,0 +1,3 @@
+[submodule "open-spatial-grounding"]
+	path = open-spatial-grounding
+	url = https://github.com/benedictquartey/open-spatial-grounding
