@@ -1,0 +1,30 @@
+name: limp  # Name of your conda environment
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9  # Specify the Python version
+  - spot    
+  - pip         
+  - pip:
+      - numpy 
+      - open3d   
+      - networkx 
+      - pillow
+      - matplotlib
+      - transformers
+      - torch
+      - torchvision
+      - tqdm
+      - ipykernel
+      - timm==0.9.10
+      - openai==0.28
+      - pqdict
+      - ipywidgets
+      - ipympl
+      - sympy
+      - google-generativeai
+      - fire
+      - more_itertools
+      - opencv-python==4.9.0.80
+      - pyliblzfse
