@@ -25,7 +25,7 @@ This is the code base for the paper **"Verifiably Following Complex Robot Instru
 * This codebase supports directly using RGBD data from robot exploration however the easiest way to get started is using an Iphone Pro equiped with lidar sensors.
 * Download the [Record3D app](https://record3d.app), scan the scene of your choice and export the *.r3d file to your computer.
   - Make sure to capture all test objects in your recording.
-  - You can download a sample r3d file from here: [apartment](https://github.com/ok-robot/ok-robot/blob/main/ok-robot-navigation/r3d/sample.r3d)
+  - You can download a sample r3d file from here: [apartment](https://)
 
 
 ## Running Instructions

@@ -7,7 +7,7 @@ dependencies:
   - spot    
   - pip         
   - pip:
-      - numpy 
+      - numpy==1.26.4 
       - open3d   
       - networkx 
       - pillow
