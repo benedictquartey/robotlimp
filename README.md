@@ -7,25 +7,25 @@ This is the code base for the paper **"Verifiably Following Complex Robot Instru
 * [Link to project website with robot demonstration videos](https://benedictquartey.github.io/robotlimp/index.html) 
 
 ## Installation
-* Create conda environment and install relevant packages: ```conda env create -f environment.yml```
-  - Known issue on macs with apple silicon (osx-arm64):
-     - A dependent library for LTL and automata manipulation [Spot](https://spot.lre.epita.fr/) doesn't currently support installation via conda for osx-arm64.
-     - You will need to remove the spot package from [environment.yml](environment.yml) to setup the limp env, then install Spot from [source](https://spot.lre.epita.fr/install.html) or via [homebrew](https://formulae.brew.sh/formula/spot)
-* Activate your conda environment: ```conda activate limp```
-* Setup the [Open Spatial Grounding Library (OSG)](https://github.com/benedictquartey/open-spatial-grounding) submodule
-  * Update submodule run
-    - ``` git submodule update --init --recursive ```
-    - ``` git submodule foreach git pull origin main```
-  * Install OSG ``` pip install -e open-spatial-grounding```
-  * In the ```limp``` conda environment install [Mobile SAM](https://github.com/ChaoningZhang/MobileSAM) or [Segment Anything](https://github.com/facebookresearch/segment-anything) as stated in OSG's installation instructions.
-  * Copy the [osg](https://github.com/benedictquartey/open-spatial-grounding/tree/main/osg) folder from the Open Spatial Grounding library and place it in this root directory.
-* Obtain an [Openai api key](https://platform.openai.com/api-keys) and add it to your system variables.
+1. Create conda environment and install relevant packages: ```conda env create -f environment.yml```
+    - Known issue on macs with apple silicon (osx-arm64):
+      - A dependent library for LTL and automata manipulation [Spot](https://spot.lre.epita.fr/) doesn't currently support installation via conda for osx-arm64.
+      - You will need to remove the spot package from [environment.yml](environment.yml) to setup the limp env, then install Spot from [source](https://spot.lre.epita.fr/install.html) or via [homebrew](https://formulae.brew.sh/formula/spot)
+2.  Activate your conda environment: ```conda activate limp```
+3.  Setup the [Open Spatial Grounding Library (OSG)](https://github.com/benedictquartey/open-spatial-grounding) submodule
+    * Update submodule run
+      - ``` git submodule update --init --recursive ```
+      - ``` git submodule foreach git pull origin main```
+    * Install OSG ``` pip install -e open-spatial-grounding```
+    * In the ```limp``` conda environment install [Mobile SAM](https://github.com/ChaoningZhang/MobileSAM) or [Segment Anything](https://github.com/facebookresearch/segment-anything) as stated in OSG's installation instructions.
+    * Copy the [osg](https://github.com/benedictquartey/open-spatial-grounding/tree/main/osg) folder from the Open Spatial Grounding library and place it in this root directory.
+4. Obtain an [Openai api key](https://platform.openai.com/api-keys) and add it to your system variables.
 
 ## Scan Environment
 * This codebase supports directly using RGBD data from robot exploration however the easiest way to get started is using an Iphone Pro equiped with lidar sensors.
 * Download the [Record3D app](https://record3d.app), scan the scene of your choice and export the *.r3d file to your computer.
   - Make sure to capture all test objects in your recording.
-  - You can download a [sample r3d file](https://github.com/ok-robot/ok-robot/blob/main/ok-robot-navigation/r3d/sample.r3d) from Ok-Robot a cool project on open-vocabulary navigation.
+  - You can download a sample r3d file from here: [apartment](https://github.com/ok-robot/ok-robot/blob/main/ok-robot-navigation/r3d/sample.r3d)
 
 
 ## Running Instructions
