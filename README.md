@@ -17,7 +17,7 @@ This is the code base for the paper **"Verifiably Following Complex Robot Instru
       - ``` git submodule update --init --recursive ```
       - ``` git submodule foreach git pull origin main```
     * Install OSG ``` pip install -e open-spatial-grounding```
-    * In the ```limp``` conda environment install [Mobile SAM](https://github.com/ChaoningZhang/MobileSAM) or [Segment Anything](https://github.com/facebookresearch/segment-anything) as stated in OSG's installation instructions. Remember to download model checkpoints.
+    * In the ```limp``` conda environment install [Mobile SAM](https://github.com/ChaoningZhang/MobileSAM) or [Segment Anything](https://github.com/facebookresearch/segment-anything) as stated in OSG's installation instructions. Remember to download model checkpoints into the [model_ckpts](https://github.com/benedictquartey/open-spatial-grounding/tree/main/osg/model_ckpts) folder.
     * Copy the [osg](https://github.com/benedictquartey/open-spatial-grounding/tree/main/osg) folder from the Open Spatial Grounding library and place it in this root directory.
 4. Obtain an [Openai api key](https://platform.openai.com/api-keys) and add it to your system variables.
 
