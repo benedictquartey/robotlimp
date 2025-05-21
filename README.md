@@ -10,7 +10,7 @@ This is the code base for the paper **"Verifiably Following Complex Robot Instru
 * Create conda environment and install relevant packages: ```conda env create -f environment.yml```
   - Known Issue:
      - A dependent library for LTL and automata manipulation [Spot](https://spot.lre.epita.fr/) doesn't currently support installation via conda on Apple silicon (osx-arm64)
-     - You will need to remove the spot package from [environment.yaml](environment.yaml) to setup the limp env, then install Spot from [source](https://spot.lre.epita.fr/install.html) or via [homebrew](https://formulae.brew.sh/formula/spot)
+     - You will need to remove the spot package from [environment.yml](environment.yml) to setup the limp env, then install Spot from [source](https://spot.lre.epita.fr/install.html) or via [homebrew](https://formulae.brew.sh/formula/spot)
 * Activate your conda environment: ```conda activate limp```
 * Setup the [Open Spatial Grounding Library (OSG)](https://github.com/benedictquartey/open-spatial-grounding) submodule
   * Update submodule run
