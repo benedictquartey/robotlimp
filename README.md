@@ -27,7 +27,6 @@ This is the code base for the paper **"Verifiably Following Complex Robot Instru
   - Make sure to capture all test objects in your recording.
   - You can download a sample r3d file from here: [apartment](https://)
 
-
 ## Running Instructions
 * Walkthrough the [demo notebook](demo_notebook.ipynb)
 
@@ -36,10 +35,12 @@ This is the code base for the paper **"Verifiably Following Complex Robot Instru
 The methods implemented in this codebase were proposed in the paper ["Verifiably Following Complex Robot Instructions with Foundation Models"](https://arxiv.org/pdf/2402.11498). If you find any part of this code useful, please consider citing:
 
 ```bibtex
-@article{quartey2024verifiably,
-  title={Verifiably Following Complex Robot Instructions with Foundation Models},
-  author={Quartey, Benedict and Rosen, Eric and Tellex, Stefanie and Konidaris, George},
-  journal={arXiv preprint arXiv:2402.11498},
-  year={2024}
+        @inproceedings{quartey2025verifiably,
+        title={Verifiably following complex robot instructions with foundation models},
+        author={Quartey, Benedict and Rosen, Eric and Tellex, Stefanie and Konidaris, George},
+        booktitle={2025 IEEE International Conference on Robotics and Automation (ICRA)},
+        pages={1--8},
+        year={2025},
+        organization={IEEE}
 }
 ```
